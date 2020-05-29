@@ -1,8 +1,8 @@
-##Hello World Maven plugin
+## Hello World Maven plugin
 ----------------------------
 
 
-###JRE System Library - JavaSE-1.8
+### JRE System Library - JavaSE-1.8
 
 1. Download the entire project (hello-maven-plugin, target-app)
 2. Choose a project in cmd: ..\hello-maven-plugin>mvn clean install
