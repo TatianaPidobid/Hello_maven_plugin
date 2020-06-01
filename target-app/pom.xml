@@ -10,19 +10,27 @@
 	<version>pom</version>
 
 	<name>target-app</name>
-
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
+		<prop1>abcde</prop1>
 	</properties>
 
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>com.mavenplugin</groupId>
-				<artifactId>hello-maven-plugin</artifactId>
-				<version>1</version>
+			   <artifactId>maven-antrun-plugin</artifactId>
+			   <executions>
+			       <execution>
+			           <phase>generate-resources</phase>
+			           <goals>
+			               <goal>run</goal>
+			           </goals>
+			           <configuration>
+			               <tasks>
+			                   <echo>${prop1}</echo>
+			               </tasks>
+			           </configuration>
+			       </execution>
+			   </executions>
 			</plugin>
 		</plugins>
 	</build>
