@@ -1,3 +1,6 @@
+hello-maven-plugin/target/
+target-app/target
+
 # Eclipse
 .settings/
 .classpath
